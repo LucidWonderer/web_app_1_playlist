@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Vibey</title>
+</head>
+<body>
+<div class = newNav>
+<nav class="navbar navbar-expand-sm  .justify-content-center">
+    <a class="navbar-brand" href="index.html">Vibey</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</div>
+    <section>
+        <h1>Vibey</h1>
+        <h2 class="title"></h2>
+        <div class="container">
+            <div id="video_player">
+                <iframe id="main-Video" src="" frameborder="0"></iframe>
+            </div>
+            <div class="playlistBx">
+                <div class="header">
+                    <div class="row">
+                        <span class="AllSongs"></span>
+                    </div>
+                </div>
+                <ul class="playlist" id="playlist">
+                </ul>
+            </div>
+
+        </div>
+        <label for="song-link">Enter a song link:</label>
+        <input type="text" id="song-link">
+        <button id="add-song-btn">Add Song</button>
+
+        <script src="video-list.js">
+            const addSongBtn = document.getElementById('add-song-btn');
+            const songLinkInput = document.getElementById('song-link');
+
+            addSongBtn.addEventListener('click', () => {
+                const name = prompt('Enter the song name:');
+                const src = songLinkInput.value;
+                const id = `vid_${allVideos.length + 1}`;
+
+                allVideos.push({ name, src, id });
+                console.log(allVideos);
+            });
+        </script>
+    </section>
+    <script src="./video-list.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
