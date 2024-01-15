@@ -12,7 +12,7 @@ let allVideos = [
    },
    {
       name: "Palm Trees",
-      src: "https://www.youtube.com/embed/oZ4Wu-1jBsA",
+      src: "https://www.youtube.com/watch?v=oZ4Wu-1jBsA",
       id: "vid_3"
    },
    {
