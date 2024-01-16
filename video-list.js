@@ -17,7 +17,7 @@ let allVideos = [
    },
    {
       name: "Why",
-      src: "https://www.youtube.com/embed/PXyPiHt2weU",
+      src: "https://www.youtube.com/watch?v=PXyPiHt2weU",
       id: "vid_4"
    },
    {
