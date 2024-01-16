@@ -11,13 +11,13 @@ let allVideos = [
       id: "vid_2"
    },
    {
-      name: "Palm Trees",
-      src: "https://www.youtube.com/watch?v=oZ4Wu-1jBsA",
+      name: "Low Blow",
+      src: "https://www.youtube.com/embed/y6dKfvDQBlA?si=RlBM94bZ5HSXuP6x",
       id: "vid_3"
    },
    {
       name: "Why",
-      src: "https://www.youtube.com/watch?v=PXyPiHt2weU",
+      src: "https://www.youtube.com/embed/PXyPiHt2weU?si=CYcf0E46tb7Gi1du,
       id: "vid_4"
    },
    {
